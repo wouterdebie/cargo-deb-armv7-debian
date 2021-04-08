@@ -11,6 +11,6 @@ inputs:
     default: "cargo deb --target=armv7-unknown-linux-musleabihf"
 runs:
   using: "docker"
-  image: "docker://eghcr.io/wouterdebie/cargo-deb-armv7-debian:1.0"
+  image: "docker://ghcr.io/wouterdebie/cargo-deb-armv7-debian:1.0"
   args:
     - ${{ inputs.cmd }}
